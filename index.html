@@ -486,11 +486,12 @@
     </section>
 
     <!-- feature section-2 -->
-    <section class="bg-[url(./images/assets/feature-section-2BG.svg)] bg-cover pb-[150px] mt-14 pt-[10rem]">
-         <div class="w-10/12 max-w-[1080px] mx-auto relative">
+    <section class="bg-[url(./images/assets/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[350px] mt-14 pt-[10rem]">
+         <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4">
 
-            <h2 class="font-mullish font-bold text-white leading-[1.2] text-2xl text-center">Explore RazorpayX powered Business Banking</h2>
-            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+            <h2 class="font-mullish font-bold text-white leading-[1.2] text-2xl text-center">
+                Explore RazorpayX powered Business Banking</h2>
+            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-20"></div>
 
             <!-- main feature box -->
             <div class="w-full min-h-[440px] flex relative">
@@ -502,43 +503,60 @@
 
 
                 <!-- content box -->
-                <div>
+                <div class="w-ful p-10 py-12 bg-[#181c2e] border ">
+            
                     <!-- left part -->
-                    <div>
-                        <h3>Manage your company’s finances and supercharge your business banking with
-                            <img src="./images/assets/razorpayX.svg" alt="">
+                    <div class="flex flex-col justify-between w-full h-full items-start">
+                        <h3 class="font-mullish text-[28px] leading-10 font-bold text-white max-w-[500px]">
+                            Manage your company’s finances and supercharge your business banking with
+                            <img src="./images/assets/razorpayX.svg" alt="" loading="lazy"
+                            class="inline" width="168px" height="32px">
+                            <!-- <span class="text-lightBlue">Payment Gateway</span> -->
                         </h3>
-                        <ul>
-                            <li>
-                                <i></i>
-                                <span>Business Banking for disruptors</span>
+                        <ul class="space-y-2">
+                            <li class="text-white font-mullish flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-greenLight"></i>
+                                <span>Open a fully digital current account</span>
                             </li>
-                            <li>
-                                <i></i>
-                                <span>All standard banking features</span>
+                            <li class="text-white font-mullish flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-greenLight"></i>
+                                <span>Automate payables & compliment payments</span>
                             </li>
-                            <li>
-                                <i></i>
-                                <span>Tech capabilities like API Banking</span>
+                            <li class="text-white font-mullish flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-greenLight"></i>
+                                <span>Simplify and track spends with Corporate cards</span>
                             </li>
-                            <li>
-                                <i></i>
-                                <span>Insightful Reports</span>
-                            </li>
-                            <li>
-                                <i></i>
-                                <span>Multiple Payout flow options</span>
+                            <li class="text-white font-mullish flex items-center space-x-2">
+                                <i class="fa-solid fa-check text-greenLight"></i>
+                                <span>View financial insights at a glance</span>
                             </li>
                         </ul>
-                        <div>
-                            <button>Sign Up</button>
-                            <div>
-                                <a href="">Know More</a>
-                                <i></i>
+                        <!-- for button and hyperlink -->
+                        <div class="flex flex-row w-full items-center space-x-4">
+                            <button class="relative bg-lightBlue flex items-center
+                            justify-start  text-white py-[14px] px-[18px] md:pr-[90px]
+                            rounded-md font-mullish font-bold hover:bg-lightBlue500 
+                            transition-all duration-200"
+                            >
+                            Sign Up
+                            <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex
+                            justify-center items-center"
+                            ><i class="fa-solid fa-arrow-right skew-x-[-20deg]"></i></div>
+                            
+                            </button>
+                            <div class="flex items-center cursor-pointer group">
+                                <a href="#"
+                                class="font-mullish font-bold text-lightBlue500
+                                 group-hover:text-grayBlue transition-all duration-200">
+                                 Know more</a>
+                                 <i class="fa-solid fa-chevron-right w-5 h-5 text-lightBlue500
+                                 group-hover:text-grayBlue transition-all duration-200"></i>
                             </div>
                         </div>
                     </div>
-                    <img src="./images/assets/buisness-banking.png" alt="">
+                    <img src="./images/assets/payment-suite.png" alt=""
+                    class="max-w-[600px] w-auto align-middle absolute right-0 bottom-0">
+    
                 </div>
             </div>
          </div>
