@@ -15,6 +15,20 @@
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+
+        .companiesList{
+            animation: moveCompany 10s infinite linear;
+        }
+
+        @keyframes moveCompany {
+            0%{
+                top:0;
+
+            }
+            100%{
+                top: -50%;
+            }
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -970,14 +984,15 @@
             </div>
         </section>
 
-        <section class="bg-[# f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100] ">
-            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+        <!-- join razorpay section -->
+        <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100] ">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row gap-32">
 
                 <!-- left part -->
-                <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                <div class="flex flex-col justify-center max-w-[500px]">
                     <h3 class="font-mullish font-bold text-2xl text-deepBlueHead">
                         Join the 50,00,000 businesses using Razorpay</h3>
-                    <div class="w-6 h-1 bg-greenLight mx-auto my-4 mb-10 "></div>
+                    <div class="w-6 h-1 bg-greenLight my-4 mb-10 "></div>
                     <p class="font-mullish opacity-80">We make it easier for you to focus on building
                         great products while we work on simplifying your payments. 
                         Become one of us by joining thousands of our happy users 
@@ -986,12 +1001,72 @@
                 </div>
 
                 <!-- right part -->
-                <div class="h-[500px] w-[500px] relative">
+                <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                    <div style="background: linear-gradient(180deg,#f4f8ff,#fff0);"
+                    class="absolute w-full h-[150px] top-0 z-50">    
+                    </div>
+
                     <img src="./images/assets/comanies.png" alt="" width="500px"
-                    class="absolute h-auto object-cover">
+                    class="absolute h-auto object-cover companiesList">
+
+                    <div style="background: linear-gradient(0deg,#f4f8ff,#fff0);"
+                    class="absolute w-full h-[150px] bottom-0">
+
+                    </div>
                 </div>
 
             </div>
+        </section>
+
+        <!-- testimonial section -->
+        <section class="relative">
+            <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+
+                <img src="./images/assets/feature-section1-dottedrows.png" alt=""
+                class="absolute w-[200px] top[8rem] left-[2rem] -z-10">
+                <h2 class="font-mullish font-bold text-2xl text-deepBlueHead text-center">An Experience
+                    <br> People Love to Talk About</h2>
+                <div class="w-6 h-1 bg-greenLight mx-auto items-center my-4"></div>
+            
+
+                <!-- left button -->
+                <button>
+                    <div>
+                        <i class="fa-solid fa-chevron-right w-6 h-6
+                        stroke-[5px] md:w-10 md:h-10 text-gray-400"></i>
+                    </div>
+                </button>
+
+                <!-- right button -->  
+                <button>
+                    <div>
+                        <i class="fa-solid fa-chevron-right w-6 h-6
+                        stroke-[5px] md:w-10 md:h-10 text-gray-400"></i>
+                    </div>
+                </button>
+
+                <!-- main content -->
+                <div>
+                    <!-- left image -->
+                    <img src="./images/assets/testimonial.jpg" alt="">
+
+                    <!-- right part -->
+                    <div>
+                        <img src="./images/assets/quotes.svg" alt="">
+                        <p>Acquire Customers From New Customer Segments</p>
+                        <a href="">Learn More</a>
+                        <h3>Subham Kumar</h3>
+                        <p>Product Manager</p>
+                        <img src="./images/assets/fake-company-logo.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 6 dot wala div -->
+                <div>
+                    <div></div>
+                </div>
+            </div>
+
         </section>
     </div>
 </body>
