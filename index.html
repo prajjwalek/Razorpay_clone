@@ -51,42 +51,42 @@
 
                 <ul class="flex space-x-5">
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Payments</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
                     transition-all duration-200 "></div>
                     </li>
                     
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Banking</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
                     transition-all duration-200 "></div>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Corporate Card</a>
                     
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Payroll</a>
                     
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Resources</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
                     transition-all duration-200 "></div>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group hidden lg:block"> 
                     <a href="#">Support</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
                     transition-all duration-200 "></div>
 
                     <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
-                    transition-all duration-200 relative group"> 
+                    transition-all duration-200 relative group "> 
                     <a href="#">Pricing</a>
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
                     transition-all duration-200 "></div>
@@ -98,16 +98,17 @@
                     <img 
                         src="./images/assets/india-flag.svg" 
                         width="28px"
-                        height="20px"/>
+                        height="20px"
+                        class="hidden lg:block"/>
                     
                     <button class="py-3 px-5 font-mullish text-white border-lightBlue 
-                        border rounded-sm text-sm font-bold">
+                        border rounded-sm text-sm font-bold visible">
                         Log In
                     </button>
 
                     <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
                         bg-white text-lightBlue border transition-all duration-200
-                        hover:text-lightBlue500 space-x-4">
+                        hover:text-lightBlue500 space-x-4 hidden lg:flex">
                         Sign In
                         <i class="fa-solid fa-arrow-right pl-1 "></i></button>
                     </button>
@@ -118,7 +119,7 @@
 
         <!-- HERO SECTION -->
         <section class="relative bg-deepBlue over">
-            <div class=" w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+            <div class=" w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
                 <!-- left part -->
                 <div class="space-y-8 ">
                     <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
@@ -156,12 +157,13 @@
 
             <div class="relative w-10/12 mx-w-[1080px] mx-auto pt-4">
                 <!-- header -->
-                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-bold">
+                <h2 class="font-mullish text-center text-4xl leading-[1.2] font-bold">
                     Accept Payments with Razorpay Payment Suite</h2>
+
                 <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
                 
                 <!-- content box -->
-                <div class="w-full min-h-[520px] mt-20 bg-white flex rounded-md relative p-20 pt-2 border">
+                <div class="w-full min-h-[520px] mt-20 bg-white flex rounded-md relative p-10 lg:p-20 pt-2 border">
                 
                     <!-- left part -->
                     <div class="flex flex-col justify-between w-full ">
@@ -196,13 +198,14 @@
                             </li>
                         </ul>
                         <!-- for button and hyperlink -->
-                        <div class="flex flex-row items-center space-x-4">
-                            <button class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md
+                        <div class="flex flex-col-reverse md:flex-row items-center space-x-4">
+                            <button class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md
                             font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
                             >
                             Sign Up Now
                             <i class="fa-solid fa-arrow-right"></i></button>
-                            <div class="flex items-center cursor-pointer group">
+                            
+                            <div class="flex self-start md:self-center cursor-pointer group">
                                 <a href="#"
                                 class="font-mullish font-bold text-lightBlue500
                                 group-hover:text-grayBlue transition-all duration-200">
@@ -213,10 +216,11 @@
                         </div>
                     </div>
                     <img src="./images/assets/payment-suite.png" alt=""
-                    class="max-w-[600px] w-auto align-middle absolute right-0 bottom-0">
+                    class="max-w-[600px] w-auto align-middle absolute right-0 bottom-0 hidden
+                    md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
 
                 </div>
-                <div class="w-full grid grid-cols-3 gap-4 mt-10">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
                     <!-- box1 -->
                     <div class="w-full min-h-[15rem] relative cursor-pointer">
                         <img src="./images/assets/payment-link-icon.svg" alt=""
@@ -558,11 +562,12 @@
                                 </li>
                             </ul>
                             <!-- for button and hyperlink -->
-                            <div class="flex flex-row w-full items-center space-x-4">
+                            <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4">
                                 <button class="relative bg-lightBlue flex items-center
-                                justify-start  text-white py-[14px] px-[18px] md:pr-[90px]
+                                place-content-center md:justify-start  text-white py-[14px] px-[18px] md:pr-[90px]
                                 rounded-md font-mullish font-bold hover:bg-lightBlue500 
-                                transition-all duration-200"
+                                transition-all duration-200
+                                self-stretch md:w-fit"
                                 >
                                 Sign Up
                                 <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex
@@ -581,12 +586,12 @@
                             </div>
                         </div>
                         <img src="./images/assets/buisness-banking.png" alt="" loading="lazy"
-                        class="max-w-[600px] absolute right-0 bottom-0">
+                        class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
         
                     </div>
 
                     <!-- card box -->
-                    <div class="grid grid-cols-3 w-full gap-4 my-14">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                         <!-- box1 -->
                         <div class="w-full min-h-[15rem] relative cursor-pointer">
                             <img src="./images/assets/payment-link-icon.svg" alt=""
@@ -734,8 +739,9 @@
                     </div> 
 
                     <!-- demo box -->
-                    <div class="w-full flex flex-row items-center justify-evenly
-                    border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8">
+                    <div class="w-full items-center justify-evenly
+                    border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8
+                    hidden md:flex md:flex-col lg:flex-row lg:flex">
                         <p class="font-mullish text-white text-xl">Check out the live demo to learn how RazorpayX works.
                             <span>
                                 No sign-up required!
@@ -762,11 +768,11 @@
         <section class="bg-white relative" >
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
                 <img src="./images/assets/feature-section1-dottedrows.png" alt=""
-                loading="lazy" class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
+                loading="lazy" class="absolute w-[233px] left-[300px] -top-[6rem] z-10 hidden lg:block">
                 <img src="./images/assets/feature-section1-dottedrows.png" alt=""
-                loading="lazy" class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10">
+                loading="lazy" class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10 hidden lg:block">
 
-                <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100] ">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100] ">
                     <!-- item 1 -->
                     <div class="relative flex items-center z-0">
                         <h2
@@ -895,7 +901,7 @@
                     best customer experience
                 </p>
 
-                <div class="grid grid-cols-4 gap-[2rem] mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
                     <!-- card 1 -->
                     <div>
                         <img src="./images/assets/instant-activation-icon.svg" alt="">
@@ -991,10 +997,10 @@
 
         <!-- join razorpay section -->
         <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100] ">
-            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row gap-32">
+            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row gap-32">
 
                 <!-- left part -->
-                <div class="flex flex-col justify-center max-w-[500px]">
+                <div class="flex flex-col justify-center w-full md:max-w-[500px]">
                     <h3 class="font-mullish font-bold text-2xl text-deepBlueHead">
                         Join the 50,00,000 businesses using Razorpay</h3>
                     <div class="w-6 h-1 bg-greenLight my-4 mb-10 "></div>
@@ -1006,7 +1012,7 @@
                 </div>
 
                 <!-- right part -->
-                <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
                     <div style="background: linear-gradient(180deg,#f4f8ff,#fff0);"
                     class="absolute w-full h-[150px] top-0 z-50">    
                     </div>
@@ -1055,7 +1061,7 @@
                 </button>
 
                 <!-- main content -->
-                <div class="flex flex-row max-w-[960px] items-center mx-auto my-20 justify-between">
+                <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 justify-between">
                     <!-- left image -->
                     <img src="./images/assets/testimonial.jpg" alt=""
                     height="320px"
@@ -1068,14 +1074,14 @@
                         <img src="./images/assets/quotes.svg" alt=""
                         width="35px"
                         height="40px"
-                        class="">
-                        <p class="font-mullish text-3xl font-extralight opacity-50"
+                        class="xl:order-1">
+                        <p class="font-mullish text-3xl font-extralight opacity-50 xl:order-1"
                         >Acquire Customers From New Customer Segments</p>
-                        <a href="" class="text-grayText italic underline">Learn More</a>
-                        <h3 class="font-mullish font-extrabold text-2xl">Subham Kumar</h3>
-                        <p class="font-mullish font-medium">Product Manager</p>
+                        <a href="" class="text-grayText italic underline xl:order-1">Learn More</a>
+                        <h3 class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Subham Kumar</h3>
+                        <p class="font-mullish font-medium xl:order-1">Product Manager</p>
                         <img src="./images/assets/fake-company-logo.png" alt=""
-                        class="" width="80px" height="40px">
+                        class="xl:order-1" width="80px" height="40px">
                     </div>
                 </div>
 
@@ -1103,7 +1109,7 @@
             <!-- main content -->
             <div class="w-10/12 max-w-[1080px] relative flex flex-row mx-auto items-center justify-between space-x-20 pt-16">
                 <!-- left part -->
-                <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
+                <div class="flex flex-col gap-5 mt-12 max-w-[380px]  md:max-w-[470px] lg:max-w-[600px] py-5 pb-32">
                     <h3 class="font-mullish font-bold text-2xl text-white ">
                     Supercharge your business with Razorpay</h3>
                     <div class="w-6 h-1 bg-greenLight"></div>
@@ -1138,27 +1144,27 @@
                 </div> 
 
                 <!-- right part -->
-                <img src="./images/assets/ctaImg.svg" alt="" width="240px" height="282px" class="mt-20" >
+                <img src="./images/assets/ctaImg.svg" alt="" width="240px" height="282px" class="mt-20 hidden lg:block" >
             </div>
         </section>
 
         <!-- footer  -->
-        <section class="relative w-full">
+        <section class="relative w-full bg-gradient-to-r from-[#eef9fe] to-[#edf7ff]">
             <div class="grid grid-cols-4 relative w-10/12 gap-[2rem] mx-auto max-w-[1080px]">
-                <div class="font-mullish">
+                <div class="flex flex-col gap-4">
                     <img src="./images/assets/razorpay-logo.svg" alt="" >
-                    <p>Razorpay is the only payments solution in India that allows businesses to accept, 
+                    <p class="font-mullish text-[14px] text-[#525a76]">Razorpay is the only payments solution in India that allows businesses to accept, 
                         process and disburse payments with its product suite. It gives you access to all 
                         payment modes including credit card, debit card, netbanking, UPI and popular 
                         wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
-                    <p>RazorpayX supercharges your business banking experience, bringing effectiveness, 
+                    <p class="font-mullish text-[14px]">RazorpayX supercharges your business banking experience, bringing effectiveness, 
                         efficiency, and excellence to all financial processes. With RazorpayX, 
                         businesses can get access to fully-functional current accounts, supercharge 
                         their payouts and automate payroll compliance.</p>
-                    <p>Manage your marketplace, automate bank transfers, collect recurring payments, 
+                    <p class="font-mullish text-[14px]">Manage your marketplace, automate bank transfers, collect recurring payments, 
                         share invoices with customers and avail working capital loans - all from a 
                         single platform. Fast forward your business with Razorpay.</p>
-                    <p>Disclaimer: The RazorpayX powered Current Account and VISA corporate credit 
+                    <p class="font-mullish text-[10px]"> Disclaimer: The RazorpayX powered Current Account and VISA corporate credit 
                         card are provided by RBI licensed banks. Your RazorpayX powered current 
                         account is provided by our partner banks i.e, ICICI & RBL bank, in 
                         accordance with RBI regulations. RazorpayX itself is not a bank and 
@@ -1167,9 +1173,10 @@
                     <img src="" alt="">
                 </div>
 
-                <div>
-                    <h3>BANKING PLUS</h3>
-                    <ul>
+                <div class="flex flex-col gap-[5rem] ">
+                    
+                    <ul class="leading-5">
+                        <h3>BANKING PLUS</h3>
                         <li><a href="#">RazorpayX</a></li>
                         <li><a href="#">Current Accounts</a></li>
                         <li><a href="#">Payouts</a></li>
@@ -1178,36 +1185,43 @@
                         <li><a href="#">View Live Demo</a></li>
                     </ul>
 
-                    <h3></h3>
+                    
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <h3>LENDING</h3>
+                        <li><a href="#">Razorpay Capital</a></li>
+                        <li><a href="#">Instant Settlements</a></li>
+                        <li><a href="#">Line of Credit</a></li>
+                        <li><a href="#">Working Capital Loans</a></li>
+                        <li><a href="#">Marketplace Instant Settlements</a></li>
                     </ul>
 
-                    <h3></h3>
+                    
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <h3>BECOME A PARTNER</h3>
+                        <li><a href="#">Refer and Earn</a></li>
+                        <li><a href="#">Onboarding APIs</a></li>
                     </ul>
 
-                    <h3></h3>
+                    
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <h3>MORE</h3>
+                        <li><a href="#">Route</a></li>
+                        <li><a href="#">Invoices</a></li>
+                        <li><a href="#">Freelancer Payments</a></li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Flash Checkout</a></li>
+                        <li><a href="#">UPI</a></li>
+                        <li><a href="#">ePOS</a></li>
+                        <li><a href="#">Checkout Demo</a></li>
+                        <li><a href="#">RazorpayX Payroll</a></li>
                     </ul>
                 </div>
             </div>
         </section>
+
+
+
+
     </div>
 
 
